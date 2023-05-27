@@ -11,7 +11,7 @@
     file: app_prereq.yml
 
 - name: Install NodeJS Dependencies
-  ansible.builtin:shell: npm install
+  ansible.builtin.shell: npm install
   args:
     chdir: /app
 
