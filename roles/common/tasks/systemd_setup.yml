@@ -10,3 +10,11 @@
     enabled: true
     daemon_reload: true
 
+- name: Start ${component} Service
+  ansible.builtin.systemd:
+    name: "{{ component }}"
+    state: restarted
+    enabled: true
+    daemon_reload: true
+
+
